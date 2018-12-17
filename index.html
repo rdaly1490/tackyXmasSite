@@ -6,101 +6,94 @@
     <title>Tacky Xmas Site</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Christmas Palooza</title>
 </head>
 
 <body>
 
-    <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">
-            ❄
+    <div id="xmas-audio">
+        <audio autoplay loop>
+            <source src="audio/jingle-bell-piano.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="snowflakes" aria-hidden="true"></div>
+
+    <ul class="lightrope"></ul>
+
+    <div class="header row">
+        <h1 class="title">Happy Holidays</h1>
+        <a id="lies">(Click here to stop the music)</a>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 present-container top-row">
+            <div class="present">
+                <div class="lid">
+                    <div class="lid-top"></div>
+                    <div class="lid-sides"></div>
+                </div>
+                <div class="present-inner"></div>
+                <div class="prize">
+                    <div class="starburst"></div>
+                    <img data-present="cat" src="images/cat.png" alt />
+                </div>
+            </div>
+            <p>Christmas Cats</p>
         </div>
-        <div class="snowflake">
-            ❅
-        </div>
-        <div class="snowflake">
-            ❆
-        </div>
-        <div class="snowflake">
-            ❄
-        </div>
-        <div class="snowflake">
-            ❅
-        </div>
-        <div class="snowflake">
-            ❆
-        </div>
-        <div class="snowflake">
-            ❄
-        </div>
-        <div class="snowflake">
-            ❅
-        </div>
-        <div class="snowflake">
-            ❆
-        </div>
-        <div class="snowflake">
-            ❄
+
+        <div class="col-xs-6 present-container top-row">
+            <div class="present">
+                <div class="lid">
+                    <div class="lid-top"></div>
+                    <div class="lid-sides"></div>
+                </div>
+                <div class="present-inner"></div>
+                <div class="prize">
+                    <div class="starburst"></div>
+                    <img data-present="cake" src="images/cake.png" alt />
+                </div>
+            </div>
+            <p>World's Best Fruitcake Recipe</p>
         </div>
     </div>
 
-    <ul class="lightrope">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
 
-    <div class="present">
-        <div class="lid">
-            <div class="lid-top"></div>
-            <div class="lid-sides"></div>
+    <div class="row">
+        <div class="col-xs-6 present-container">
+            <div class="present">
+                <div class="lid">
+                    <div class="lid-top"></div>
+                    <div class="lid-sides"></div>
+                </div>
+                <div class="present-inner"></div>
+                <div class="prize">
+                    <div class="starburst"></div>
+                    <img data-present="elf" src="images/elf.png" alt />
+                </div>
+            </div>
+            <p>A brief history of elves</p>
         </div>
-        <div class="present-inner"></div>
-        <div class="prize">
-            <div class="starburst"></div>
-            <img src="https://i.imgur.com/Ke1zbOO.png" alt />
+
+        <div class="col-xs-6 present-container">
+            <div class="present">
+                <div class="lid">
+                    <div class="lid-top"></div>
+                    <div class="lid-sides"></div>
+                </div>
+                <div class="present-inner"></div>
+                <div class="prize">
+                    <div class="starburst"></div>
+                    <img data-present="naughtyOrNice" src="images/naughtyOrNice.png" alt />
+                </div>
+            </div>
+            <p>Naughty Or Nice List Checker</p>
         </div>
     </div>
 
+    <img id="creepy-snowman" src="https://thumbs.gfycat.com/PoshCrispIncatern-small.gif" />
 
     <script src="main.js"></script>
 </body>

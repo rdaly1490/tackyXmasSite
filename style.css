@@ -7,12 +7,13 @@ body {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   margin: -15px 0 0 0;
   padding: 0;
   pointer-events: none;
   width: 100%;
+  z-index: 9999999999;
 }
 .lightrope li {
   position: relative;
@@ -156,6 +157,12 @@ body {
 }
 
 /*-------- X-mas Present ---------*/
+.present-container {
+  height: 475px;
+}
+.present-container.top-row {
+  /*margin-top: 10px;*/
+}
 .present {
   width: 300px;
 }
@@ -247,8 +254,9 @@ body {
 .present {
   position: relative;
   z-index: 50;
-  top: 250px;
-  left: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
   font-size: 0;
 }
 .present:before,
@@ -301,6 +309,7 @@ body {
 }
 .prize > img {
   position: relative;
+  cursor: pointer;
 }
 
 .starburst {
@@ -464,4 +473,41 @@ body {
   left: 90%;
   -webkit-animation-delay: 3s, 1.5s;
   animation-delay: 3s, 1.5s;
+}
+
+#creepy-snowman {
+  width: 100px;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  z-index: 99999999999;
+}
+
+p {
+  font-family: "Mountains of Christmas", cursive;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+.header {
+  text-align: center;
+  font-family: "Mountains of Christmas", cursive;
+  color: whitesmoke;
+}
+
+.header .title {
+  margin-top: 100px;
+}
+
+.header a {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.xmas-audio {
+  display: none;
 }
