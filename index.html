@@ -14,6 +14,8 @@
 <body>
 
     <div id="xmas-audio">
+        <!-- Hack to make autoplay work on audio tags with no user interaction -->
+        <iframe src="audio/jingle-bell-piano.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
         <audio autoplay loop>
             <source src="audio/jingle-bell-piano.mp3" type="audio/mp3">
         </audio>
